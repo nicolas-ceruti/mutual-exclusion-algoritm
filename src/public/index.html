@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizador de Exclusão Mútua</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simulação de Algoritmo de Exclusão Mútua Centralizado</h1>
+    <div class="dashboard">
+        <div class="card coordinator-card">
+            <h2>Coordenador</h2>
+            <p id="coordinator-id">Offline</p>
+            <hr>
+            <h2>Recurso (Seção Crítica)</h2>
+            <div id="resource-status" class="status-box status-free">
+                <span id="resource-state">LIVRE</span>
+                <small id="resource-user">Ninguém usando</small>
+            </div>
+        </div>
+
+        <div class="card queue-card">
+            <h2>Fila de Espera</h2>
+            <ul id="queue-list">
+                </ul>
+        </div>
+
+        <div class="card processes-card">
+            <h2>Processos Ativos</h2>
+            <div id="process-list">
+                </div>
+        </div>
+    </div>
+    
+    <div class="log-card">
+        <h2>Log de Eventos</h2>
+        <div id="log-box">
+            </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
