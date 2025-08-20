@@ -1,9 +1,3 @@
-Com certeza\! Aqui está uma documentação completa e profissional para o projeto, no formato Markdown (`README.md`).
-
-Você pode salvar este conteúdo em um arquivo chamado `README.md` na raiz do seu projeto.
-
------
-
 # Simulador de Exclusão Mútua Centralizada com Interface Web
 
 Este projeto é uma simulação interativa e visual do **Algoritmo de Exclusão Mútua Centralizado**, um conceito fundamental em Sistemas Distribuídos. A aplicação foi desenvolvida em Node.js e apresenta uma interface web em tempo real que permite observar o comportamento dos processos, do coordenador e do acesso a um recurso compartilhado.
