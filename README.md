@@ -28,7 +28,7 @@ O objetivo deste trabalho é demonstrar, de forma prática e visual, como um coo
 
 A interface web é dividida em quatro painéis principais para facilitar a observação:
 
-![alt text](image.png)
+<img width="1270" height="657" alt="image" src="https://github.com/user-attachments/assets/2c1c75d1-8a34-4179-af14-014a35f285d8" />
 
 1.  **Coordenador e Recurso**: Mostra o ID do coordenador ativo (ou se está offline) e o estado da seção crítica (LIVRE ou OCUPADO, e por quem).
 2.  **Fila de Espera**: Exibe em ordem os processos que solicitaram acesso e estão aguardando a liberação do recurso.
