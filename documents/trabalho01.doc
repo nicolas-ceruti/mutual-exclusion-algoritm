@@ -1,0 +1,30 @@
+
+UNIVERSIDADE REGIONAL DE BLUMENAU - FURB
+CENTRO DE CIÊNCIAS EXATAS E NATURAIS
+DEPARTAMENTO DE SISTEMAS E COMPUTAÇÃO
+DISCIPLINA: Sistemas Distribuídos
+Prof. Gabriel Castellani
+
+
+TRABALHO PRÁTICO 01 – ALGORITMOS DE EXCLUSÃO MÚTUA    
+
+Descreva de maneira geral o algoritmo de exclusão mútua centralizado e comente suas vantagens e desvantagens.
+Os processos P1, P2 e P3 solicitam entrada em uma seção crítica, neste momento seus relógios lógicos são 5, 1 e 4 respectivamente. Apresente as mensagens trocadas pelo algoritmo de exclusão mútua distribuída até que todos os processos tenham passado pela seção crítica.
+Em um ambiente com cinco processos distribuídos, enumerados de 0 a 4, o processo 3 percebe que o coordenador (processo 4) não está mais ativo, e inicia uma eleição. Descreva como ocorre esta eleição no algoritmo de Ring e no algoritmo de Bully
+Compare os algoritmos de Bully e Ring e escolha o de sua preferência justificando sua escolha
+Implementar o algoritmo de Exclusão Mútua Centralizado conforme estudado em sala de aula. 
+
+Especificação:
+R01 - a cada 1 minuto o coordenador morre
+R02 - quando o coordenador morre, a fila também morre (o novo coordenador pode ser escolhido de forma randomizada. Ou seja, não é necessário implementar um algoritmo de eleição)
+R03 - o tempo de processamento de um recurso é de 5 à 15 segundos
+R04 - os processos tentam consumir o(s) recurso(s) num intervalo de 10 à 25 segundos
+R05 - a cada 40 segundos um novo processo deve ser criado (ID randômico)
+R06 - dois processos não podem ter o mesmo ID
+
+Você deverá apresentar a execução do algoritmo, assim como, mostrar e comentar das partes principais da implementação.
+
+Observações:
+o trabalho pode ter no máximo 4 (quatro) integrantes
+os programas-fonte devem ser postados no AVA
+a data de entrega é 28/08/2025

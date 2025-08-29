@@ -28,7 +28,7 @@ export default class Process {
 
     async enterCriticalSection(addLogCallback) {
         this.updateStatus('Na Seção Crítica');
-        const processingTime = randomInterval(5, 15);
+        const processingTime = randomInterval(5, 15); // R03
         addLogCallback(`[PROCESSO ${this.id}] Acesso concedido! Usando recurso por ${processingTime / 1000}s.`);
         await new Promise(resolve => setTimeout(resolve, processingTime));
 
@@ -45,7 +45,7 @@ export default class Process {
     }
     
     scheduleNextAttempt() {
-        const attemptInterval = randomInterval(10, 25);
+        const attemptInterval = randomInterval(10, 25); //R04
         setTimeout(() => this.requestAccess(), attemptInterval);
     }
 }
